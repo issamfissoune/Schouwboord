@@ -1,0 +1,123 @@
+:root {
+    --main-color:#717D8F ;
+    --secondary-color:#A1C8FF ;
+    --sub-color: #75A0DB;
+    --neutral: #ffff;
+    --button: #DBB874;
+}
+body {
+    /*min-height: 100vh;*/
+    /*place-items: center;*/
+    /*line-height: 1.6;*/
+    /*background: #f3b3ff;*/
+    /*font-family: 'VT323', monospace;*/
+    /*display: flex;*/
+    /*justify-content: center;*/
+    /*!*align-items: center;*!*/
+    color: white;
+
+    display: grid;
+    min-height: 100vh;
+    place-items: center;
+    line-height: 1.6;
+    background:var(--main-color);
+    font-family: 'VT323', monospace;
+}
+
+/*.data-field{*/
+/*    display: flex;*/
+/*    justify-content: flex-start;*/
+/*    !*align-items: center;*!*/
+
+/*}*/
+
+/*input{*/
+/*    display: flex;*/
+/*    justify-content: space-evenly;*/
+/*}*/
+
+form{
+    display:grid ;
+    grid-row-gap: 20px;
+}
+form p{
+    font-weight: 600;
+}
+
+.data-field{
+    display: flex;
+    justify-content: space-between;
+}
+
+input{
+    padding:8px 13px;
+}
+select {
+    margin-right: 22%;
+}
+
+.container {
+    background-color: #fafafa;
+    margin: 210px;
+    box-shadow:10px 15px 20px rgba(0, 0, 0, .1);
+    display: flex;
+    justify-content: left;
+    grid-template-columns: 45% 65%;
+}
+
+span{
+    color: red;
+}
+
+.container-input{
+    background-color: rgba(0,0,0,.95);
+    padding: 50px;
+    outline: 3px dashed var(--secondary-color);
+    outline-offset: -30px;
+    text-align: center;
+}
+
+.data-field{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+.button{
+    cursor: pointer;
+    font-size: 0.90rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background: hsl(var(--sub-color));
+    padding: 0.5em 1.25em;
+    border-radius: 0.25rem;
+
+}
+
+.button:hover {
+    background: var(--neutral);
+    color: black;
+}
+
+.submit{
+    background-color: var(--button);
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: #000000;
+    cursor: pointer;
+    font-size: 18px;
+    height: 45px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    outline: 0;
+    text-align: center;
+    width: 100%;
+}
+.submit:active {
+    background-color: var(--secondary-color);
+}
